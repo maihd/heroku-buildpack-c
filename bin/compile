@@ -17,6 +17,12 @@ function indent() {
 
 cd $BUILD_DIR
 
+# autogen.sh
+if [ -f autogen.sh ]; then
+  echo "-----> Run autogen.sh"
+  sh autogen.sh 2>&1 | indent
+fi
+
 # configure
 if [ -f configure ]; then
   echo "-----> Configuring"
