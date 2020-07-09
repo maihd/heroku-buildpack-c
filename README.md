@@ -12,14 +12,14 @@ Example usage:
     $ ls
     autogen.sh configure  Makefile  myapp.c
 
-    $ heroku create --stack cedar --buildpack http://github.com/heroku/heroku-buildpack-c.git
+    $ heroku create --stack cedar --buildpack http://github.com/maihd/heroku-buildpack-c.git
 
     $ git push heroku master
     ...
     -----> Heroku receiving push
     -----> Fetching custom buildpack
     -----> C app detected
-    -----> Run autogen.sh
+    -----> Running autogen.sh
            ...
     -----> Configuring
            Looking for somelibrary… ok
